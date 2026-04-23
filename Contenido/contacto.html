@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Muebles</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">Tienda <span>Muebles</span></h1>
+</header>
+
+<nav class="nav">
+    <a href="/">Inicio</a>
+    <a href="/Contenido/nosotros.html">Nosotros</a> 
+    <a href="/Contenido/tienda.html">Tienda</a>
+    <a href="/Contenido/blog.html">Blog</a>
+    <a href="/Contenido/galeria.html">Galería</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<main class="container">
+    <h2>Contacto</h2>
+
+    <form class="formulario">
+
+        <fieldset>
+            <legend>Tus Datos</legend>
+
+            <div class="campo">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Tu Nombre" required>
+            </div>
+
+            <div class="campo">
+                <label>Asunto:</label>
+                <input type="text" placeholder="Tu Asunto" required>
+            </div>
+
+            <div class="campo">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Tu Email" required>
+            </div>
+
+            <div class="campo">
+                <label>Teléfono:</label>
+                <input type="tel" placeholder="Tu Teléfono" required>
+            </div>
+
+            <div class="campo">
+                <label>Mensaje:</label>
+                <textarea></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+
+            <div class="campo">
+                <label>País:</label>
+                <select>
+                    <option>-- Seleccione --</option>
+                    <option>México</option>
+                    <option>Perú</option>
+                    <option>Colombia</option>
+                    <option>Argentina</option>
+                    <option>España</option>
+                    <option>Chile</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Extra</legend>
+
+            <div class="campo">
+                <label>Cliente</label>
+                <input type="radio" name="tipo">
+            </div>
+            <div class="campo">
+                <label>Proveedor</label>
+                <input type="radio" name="tipo">
+            </div>
+            <div class="campo">
+                <label>Categoría de Interés</label>
+                <input list="categorias">
+                <datalist id="categorias">
+                    <option value="Cocina">
+                    <option value="Exterior">
+                    <option value="Recámaras">
+                    <option value="Oficina">
+                </datalist>
+            </div>
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar Formulario" class="btn">
+
+    </form>
+</main>
+
+<footer class="footer">
+    <div class="container grid-footer">
+
+        <div>
+            <h3>Categorías</h3>
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardín</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+        </div>
+
+        <div>
+            <h3>Sobre Nosotros</h3>
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos del Servicio</a>
+        </div>
+
+        <div>
+            <h3>Soporte</h3>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en Línea</a>
+            <a href="#">Confianza y Seguridad</a>
+        </div>
+        
+
+    </div>
+
+    <p class="copy">Todos los derechos reservados. TiendaMuebles</p>
+</footer>
+
+</body>
+</html>
